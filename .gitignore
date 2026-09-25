@@ -1,0 +1,28 @@
+# Archivo temporal para crear usuarios
+crear_usuario.php
+
+# Bases de datos y copias
+*.sql
+*.zip
+*.rar
+
+# Archivos sensibles
+.env
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Editores
+.vscode/
+.idea/
+
+# Archivos subidos desde el panel
+admin/uploads/
+
+# Configuración privada
+admin/config/config.php
+admin/config/mail.php
+
+# Archivo de pruebas
+admin/prueba_conexion.php
