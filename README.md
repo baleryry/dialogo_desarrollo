@@ -376,7 +376,7 @@ Actualmente se encuentran implementados y operativos:
 
 ## Autor
 
-**Davis Vitorino**
+**Balery Dayanara Racuaz Palma**
 
 Ingeniería de Sistemas  
 Universidad Andina del Cusco
