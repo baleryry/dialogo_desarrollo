@@ -1,0 +1,38 @@
+name: Desplegar en InfinityFree
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Desplegar sitio web
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Obtener codigo de GitHub
+        uses: actions/checkout@v4
+
+      - name: Subir archivos a InfinityFree
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          port: 21
+          server-dir: /htdocs/
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            admin/uploads/**
+            admin/config/config.php
+            admin/config/mail.php
+            admin/prueba_conexion.php
+            crear_usuario.php
+            **/*.sql
+            **/*.zip
+            **/*.rar
