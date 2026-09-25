@@ -618,6 +618,10 @@ adminHeader('Reportajes');
                         accept=".jpg,.jpeg,.png,.webp"
                     >
 
+                    <div class="form-text">
+                        JPG, JPEG, PNG o WEBP. Máximo 8 MB.
+                    </div>
+
                     <?php if (!empty($editar['foto_principal'])): ?>
 
                         <div class="mt-2">
@@ -648,6 +652,10 @@ adminHeader('Reportajes');
                         accept=".pdf"
                     >
 
+                    <div class="form-text">
+                        Solo archivos PDF. Máximo 10 MB.
+                    </div>
+
                     <?php if (!empty($editar['pdf_adjunto'])): ?>
 
                         <a
@@ -676,6 +684,10 @@ adminHeader('Reportajes');
                         accept=".jpg,.jpeg,.png,.webp"
                         multiple
                     >
+
+                    <div class="form-text">
+                        JPG, JPEG, PNG o WEBP. Máximo 8 MB por imagen.
+                    </div>
 
                 </div>
 
