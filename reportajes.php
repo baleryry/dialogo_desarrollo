@@ -105,6 +105,26 @@ Author URL: http://w3layouts.com
         object-position: center;
       }
 
+      /* Marca roja decorativa solo para reportajes creados desde el panel */
+      .reportaje-imagen-marca {
+        position: relative;
+        display: block;
+        overflow: hidden;
+      }
+
+      .reportaje-imagen-marca::after {
+        content: "";
+        position: absolute;
+        top: -42px;
+        right: -18px;
+        width: 180px;
+        height: 95px;
+        background: #e30613;
+        border-bottom-left-radius: 100%;
+        pointer-events: none;
+        z-index: 2;
+      }
+
       .grids-block-5 .grids5-info .blog-info {
         flex: 1;
         display: flex;
@@ -228,7 +248,7 @@ Author URL: http://w3layouts.com
 
                         <a
                             href="reportaje.php?id=<?= (int)$r['id'] ?>"
-                            class="d-block"
+                            class="d-block reportaje-imagen-marca"
                         >
                             <?php if (!empty($r['foto_principal'])): ?>
                                 <img
