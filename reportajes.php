@@ -73,6 +73,10 @@ Author URL: http://w3layouts.com
     <!-- Template CSS -->
     
     <link rel="stylesheet" href="assets/css/style-starter.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
 
     <style>
       /* SOLO AJUSTE VISUAL:
